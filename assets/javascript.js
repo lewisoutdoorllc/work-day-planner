@@ -35,21 +35,22 @@ var updateBackground = function () {
       textArea.addClass("future")
 
   }
-  // console.log(hour) //
 }
 }
 
-
+/*
+function renderDescription(data) {
+  $('array').empty();
+*/
 
 $("button").on('click', function(event){ 
   event.preventDefault();
-  
   let btn = $(this)
   let hour = btn.data('hour')
   //console.log ($(this).data('hour'))
   let content = $("#" + hour).val()
 
-// is content for the specified content/hour
+  //renderDescription(data);
     var duplicate = false
 // check contnet   
 for (let i= 0; i < data.length; i++) {
@@ -65,18 +66,13 @@ if ( !duplicate ){
   var obt = {'hour': hour, 'content': content } //  console.log(hour, content)
    data.push(obt) 
 }  //console.log (data)  
-// // hi, has the hour loop. through array update it. look through it find the hour we 
-// // up date the spefic data.  
 
+//renderDescription(data);
 
 localStorage.setItem('array', JSON.stringify(data));
 
 alert (localStorage.getItem('array'));
 
+}) 
 
-
-})  // git content from the text area
-
-// local storage .get itmen 
-// call array data
-// .ready
+//renderDescription(data);
