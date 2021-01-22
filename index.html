@@ -23,37 +23,84 @@
   </head>
 
   <body>
+    <!-- begin Header-->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
-      <main>
-          <div id="output"></div>
-      </main>
-      <script src="./assets/luxon.js"></script>
-      <script id="date-time">
-          let output = document.getElementById('output')
-          let DateTime = luxon.DateTime;
-          let today = DateTime.local();
-          let f = {month: 'long', day: '2-digit'};
-          let m = today.get('month');
-          let newDt = today.set({month: 12});
-          output.textContent = today.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
-          console.log ( today.toISO());
-      </script>
     </header>
-<form id="planner">
+    <!-- end Header-->
     <div class="container" id="plannerContainer">
       <!-- Timeblocks go here -->
-      <div class="row-sm-12">
-          <p> whats up</p>
-      </div>
+        <div class="row timeBlock" id="hour-9">
+            <div class="col-md-2 hour" data-hour ="9">
+                9am
+            </div>
+                <textarea class="col-md-9 description" id="9"></textarea>
+                <button class="btn saveBtn col-md-1" data-hour ="9"><i class="far fa-save"></i></button>         
+        </div>
+        <div class="row timeBlock" id="hour-10">
+            <div class="col-md-2 hour">
+                10am
+            </div>
+                <textarea class="col-md-9 description" id="10"></textarea>
+                <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>         
+        </div>
+        <div class="row timeBlock" id="hour-11">
+            <div class="col-md-2 hour">
+                11am
+            </div>
+                <textarea class="col-md-9 description" id="11"></textarea>
+                <button class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>         
+        </div>
+        <div class="row timeBlock" id="hour-12">
+            <div class="col-md-2 hour">
+                12am
+            </div>
+                <textarea class="col-md-9 description" id="12"></textarea>
+                <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>         
+        </div>
+        <div class="row timeBlock" id="hour-1">
+            <div class="col-md-2 hour">
+                1pm
+            </div>
+                <textarea class="col-md-9 description" id="13"></textarea>
+                <button class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>         
+        </div>
+        <div class="row timeBlock" id="hour-2">
+            <div class="col-md-2 hour">
+                2pm
+            </div>
+                <textarea class="col-md-9 description" id="14"></textarea>
+                <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>         
+        </div>
+        <div class="row timeBlock" id="hour-3">
+            <div class="col-md-2 hour">
+                3pm
+            </div>
+                <textarea class="col-md-9 description" id="15"></textarea>
+                <button class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>         
+        </div>
+        <div class="row timeBlock" id="hour-4">
+            <div class="col-md-2 hour">
+                4pm
+            </div>
+                <textarea class="col-md-9 description" id="16"></textarea>
+                <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>         
+        </div>
+        <div class="row timeBlock" id="hour-5">
+            <div class="col-md-2 hour">
+                5pm
+            </div>
+                <textarea class="col-md-9 description" id="17"></textarea>
+                <button class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>         
+        </div>
     </div>
-</form>
-
-
+    <hr>
+  
+       
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./assets/javascript.js"></script>
+    <script src="assets\javascript.js"></script>
 </body>
 </html>
