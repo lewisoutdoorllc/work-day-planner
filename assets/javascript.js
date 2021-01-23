@@ -56,11 +56,8 @@ var updateBackground = function () {
   }
 }
 
-/*
-function renderDescription(data) {
-  $('array').empty();
-*/
 
+// save button function 
 $(document).on('click', "button", function(event){ 
   event.preventDefault();
   let btn = $(this)
