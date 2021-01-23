@@ -1,5 +1,5 @@
 
-var data = JSON.parse(localStorage.getItem('array')) || [];
+var data = [];
 
 // clock
 var updateInfo = function () {
@@ -65,14 +65,20 @@ for (let i= 0; i < data.length; i++) {
 if ( !duplicate ){ 
   var obt = {'hour': hour, 'content': content } //  console.log(hour, content)
    data.push(obt) 
-}  //console.log (data)  
+}  console.log (data)  
 
 //renderDescription(data);
 
 localStorage.setItem('array', JSON.stringify(data));
+})
 
-alert (localStorage.getItem('array'));
-
-}) 
-
-//renderDescription(data);
+var array = JSON.parse(localStorage.getItem('array'));
+if (array) {
+for (let i= 0; i < array.length; i++) {
+for (j= 9; j < 18; j++) {
+  if (array [i].hour == j) {
+    $("#" + j) .val(array [i].content)
+  }
+}
+}
+}
