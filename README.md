@@ -44,7 +44,7 @@ https://github.com/lewisoutdoorllc/work-day-planner
 
 ## Screenshot of landing page
 
-![alt text](assets\Pics\lewisoutdoorllc.github.io_work-day-planner_.png)
+![alt text](./assets/Pics/work-day-planner-screenshot.png)
 
 ## Credits
 
