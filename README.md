@@ -48,9 +48,11 @@ https://github.com/lewisoutdoorllc/work-day-planner
 
 ## Credits
 
-Thanks for all the help from Kip, other classmates, Nick, and Carlos on this little venture for making this happen.. Always fun!! Cheers..
+Thanks for all the help from Kip, Nick, Carlos, and Howard on this little venture for making this happen.. Always fun!! Cheers..
 
 //  Links that helped get to the proper conclusion for providing the solutions to our users requirements..
+
+Kip, Nick, Carlos, and Howard
 
 ## License
 
